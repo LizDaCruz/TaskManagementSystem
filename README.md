@@ -47,3 +47,25 @@ Tasks can be set to recur daily, weekly, or monthly.
 HTML: Provides the structure for the task form, task list, task history, and update form.
 CSS: Styles the form, task list, and update form for better user experience.
 JavaScript: Handles task management logic including adding, updating, deleting, and displaying tasks. Manages task history and interacts with local storage to persist data.
+
+# Testing
+## Test Setup
+npm install --save-dev jest
+
+Add taskManager.test.js to "__tests__" directory
+
+Add to the package.json
+
+"scripts": {
+  "test": "jest"
+}
+
+
+## Running the test
+npm test
+
+## Test Cases:
+Add Task: Checks if tasks are correctly added and displayed.
+Update Task: Tests if tasks are updated correctly and the changes are reflected in the UI and local storage.
+Delete Task: Verifies that tasks can be deleted and the list is updated accordingly.
+Log Task Activity: Ensures that task activities are logged correctly.
