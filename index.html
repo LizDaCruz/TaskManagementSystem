@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Management App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Task Management App</h1>
+        <form id="task-form">
+            <input type="text" id="task-input" placeholder="Enter a new task" required>
+            <input type="text" id="category-input" placeholder="Enter category" required>
+            <input type="date" id="deadline-input" required>
+            <input type="date" id="due-date-input" required>
+            <select id="priority-input">
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+            </select>
+            <input type="datetime-local" id="reminder-input">
+            <input type="email" id="assignee-input" placeholder="Assign to (email)">
+            <select id="recurrence-input">
+                <option value="none">None</option>
+                <option value="daily">Daily</option>
+                <option value="weekly">Weekly</option>
+                <option value="monthly">Monthly</option>
+            </select>
+            <button type="submit">Add Task</button>
+        </form>
+        <ul id="task-list"></ul>
+        <div id="task-history">
+            <h2>Task History</h2>
+            <ul id="history-list"></ul>
+        </div>
+        <div id="update-form-container" style="display:none;">
+            <h2>Edit Task</h2>
+            <form id="update-form">
+                <input type="hidden" id="update-task-id">
+                <input type="text" id="update-task-input" placeholder="Update task" required>
+                <input type="text" id="update-category-input" placeholder="Update category" required>
+                <input type="date" id="update-deadline-input" required>
+                <input type="date" id="update-due-date-input" required>
+                <select id="update-priority-input">
+                    <option value="low">Low</option>
+                    <option value="medium">Medium</option>
+                    <option value="high">High</option>
+                </select>
+                <input type="datetime-local" id="update-reminder-input">
+                <input type="email" id="update-assignee-input" placeholder="Assign to (email)">
+                <select id="update-recurrence-input">
+                    <option value="none">None</option>
+                    <option value="daily">Daily</option>
+                    <option value="weekly">Weekly</option>
+                    <option value="monthly">Monthly</option>
+                </select>
+                <button type="submit">Update Task</button>
+                <button type="button" id="cancel-update">Cancel</button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
