@@ -57,7 +57,7 @@ Add taskManager.test.js to "__tests__" directory
 Add to the package.json
 
 "scripts": {
-  "test": "jest"
+  "test": "test"
 }
 
 
