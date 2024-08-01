@@ -1,0 +1,25 @@
+{
+  "name": "task-management-app",
+  "version": "1.0.0",
+  "description": "A task management application with features for adding, updating, deleting, and tracking tasks.",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server ./",
+    "test": "test",
+    "build": "echo 'No build step defined.'"
+  },
+  "dependencies": {
+    "http-server": "^14.1.1"
+  },
+  "devDependencies": {
+    "jest": "^29.5.0",
+    "jsdom": "^22.1.0"
+  },
+  "keywords": [
+    "task",
+    "management",
+    "application"
+  ],
+  "author": "Elizabeth DaCruz",
+  "license": "MIT"
+}
